@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>welcome</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" type="text/css" rel="stylesheet"/>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    
+    <script
+      src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js"
+      type="text/javascript"
+    ></script>
+    <link href="css/style.css" rel="stylesheet"/>
+    <style>
+      .btn-primary, input[type="submit"] {
+
+    background-color: green;
+    border-radius: 0px;
+}
+</style>
+ </head>
+ <body>
+  <div class="container">
+  <h2>Employee</h2>
+  <form>      
+  <div class="row">
+  <div class="col-md-4 form-group">
+  <label for="firstName">First name</label>
+  <input type="text" class="form-control" name="firstName" id="firstName">
+  </div>
+ 
+ 
+  <div class="col-md-4 form-group">
+  <label for="middleName">Middle name</label>
+  <input type="text" class="form-control" name="middleName" id="middleName">
+  </div>
+ 
+ 
+  <div class="col-md-4 form-group">
+  <label for="lastName">Last name</label>
+  <input type="text" class="form-control" name="lastName" id="lastName">
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-md-6 form group">
+  <label for="address1">Addressline 1</label>
+  <input type="text" class="form-control" name="address1" id="address1">
+  </div>
+  <div class="col-md-6 form group">
+  <label for="address2">Addressline 2</label>
+  <input type="text" class="form-control" name="address2" id="address2">
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-md-6 form-group">
+  <label for="email">Email</label>
+  <input type="email" class="form-control" name="email" id="email">
+  </div>
+ 
+  <div class="col-md-3 form-group">
+  <label for="password">Password</label>
+  <input type="password" class="form-control" name="password" id="password">
+  </div>
+  <div class="col-md-3 form-group">
+  <label for="cnfpassword">Confirm Password</label>
+  <input type="password" class="form-control" name="cnfpassword" id="cnfpassword">
+  </div>
+  </div>
+  <div class="row">
+  <div class="form-group col-md-3">
+                <label for="inputState">Department</label>
+                <select id="inputState" class="form-control">
+                <option selected>Department...</option>
+                <option>IT</option>
+                <option>English</option>
+                <option>Managerial</option>
+                </select>
+            </div>
+           
+            <div class="col-md-3 form-group">
+            <label for="dateOfBirth">Date of Birth</label>
+            <input type="text" class="form-control" name="dateOfBirth" id="dateOfBirth" required>
+            </div>
+       
+        <div  class="form-group col-md-3">
+        <label for="gender">Gender</label><br>
+        <label class="radio-inline"><input type="radio" name="gender" id="male" value="male" required>Male</label>
+        <label class="radio-inline"><input type="radio" name="gender" id="female" value="female" required>Female
+        </label>
+    </div>
+    <div class="form-check form-group col-md-3">
+    <label for="per">Permanent</label><br>
+  <input class="form-check-input position-static" type="checkbox" id="per" value="Permanent">
+</div>
+<div>
+  <input type="button" id="btn" value="Save" class="btn btn-primary">
+</div>
+   </div>
+  </form>
+  </div>
+  <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+
+<script>
+
+$('#dateOfBirth').datepicker({
+  uiLibrary: 'bootstrap4',
+  format: 'dd/mm/yyyy'
+});
+</script>
+ </body>
+ </html>
